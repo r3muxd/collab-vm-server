@@ -11,7 +11,7 @@ To start collab-vm-server make sure it has executable permissions and type ./col
 
 The HTTP Directory is optional, by default, it looks and will use a folder called http.
 
-When you start the server you'll receive a message that a new database was created. The first thing you will want to do is configure the admin panel javascript to make sure it works properly. Go into the http directory, admin, open admin.min.js with a text editor, replace any instance of 127.0.0.1:6004 with your server's IP (or you can keep it localhost if you really want to). Afterwards, go to http://(your localhost):6004/admin/ and login with either the password "collabvm". The first thing we recommend is changing this password immediately because it is highly insecure. Type in the VM name you want to use, link, the startup command, choose your snapshot mode, and make sure auto start is checked if you want it to start with collab-vm-server! 
+When you start the server you'll receive a message that a new database was created. Go to http://(your localhost):6004/admin/config.html and login with the password "collabvm". The first thing you will want to do is to change this password immediately because it is highly insecure. Type in the VM name you want to use, link, the startup command, choose your snapshot mode, and make sure auto start is checked if you want it to start with collab-vm-server! 
 
 ### Compilation
 Compilation was only tested on i386, amd64, and armhf machines on Linux and Windows. It is unknown if this will work on any other architecture but theoretically Collab VM Server should be able to run on MIPS or PowerPC.
